@@ -14,4 +14,18 @@ public class BeerServiceImpl implements BeerService {
 		return BeerDto.builder().id(beerId).beerName("Tuborg").build();
 	}
 
+	@Override
+	public BeerDto create(BeerDto beerDto) {
+		return BeerDto.builder().id(beerDto.getId()).build();
+	}
+
+	@Override
+	public void update(UUID beerId, BeerDto beerDto) {
+		// TODO write some implementation later
+	}
+
+	@Override
+	public void delete(UUID beerId) {
+		// TODO write some implementation later
+	}
 }
